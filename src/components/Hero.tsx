@@ -108,7 +108,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.15, ease }}
-              className="text-4xl md:text-5xl lg:text-6xl leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl leading-tight"
               style={{
                 fontFamily: 'var(--font-display)',
                 color: 'var(--color-off-white)',

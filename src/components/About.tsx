@@ -180,15 +180,39 @@ export default function About() {
                   />
                 ) : (
                   <div
+                    className="flex items-center justify-center"
                     style={{
                       width: '100%',
                       height: '100%',
                       minHeight: '480px',
                       borderRadius: '16px 4px 16px 4px',
-                      background: `linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary-dark) 100%)`,
-                      opacity: 0.3,
+                      background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)`,
+                      border: `1px solid color-mix(in srgb, var(--color-secondary) 20%, transparent)`,
                     }}
-                  />
+                  >
+                    <div className="text-center" style={{ color: 'var(--color-secondary)', opacity: 0.5 }}>
+                      <div
+                        style={{
+                          fontFamily: 'var(--font-display)',
+                          fontSize: '3rem',
+                          lineHeight: 1,
+                          marginBottom: '0.5rem',
+                        }}
+                      >
+                        {SITE.iniciais}
+                      </div>
+                      <div
+                        style={{
+                          fontFamily: 'var(--font-sans)',
+                          fontSize: '10px',
+                          letterSpacing: '0.2em',
+                          textTransform: 'uppercase',
+                        }}
+                      >
+                        {SITE.nomeCurto}
+                      </div>
+                    </div>
+                  </div>
                 )}
                 {/* Decorative line */}
                 <div
