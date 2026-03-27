@@ -208,21 +208,19 @@ export default function Hero() {
                   src={SITE.fotoHero}
                   alt={`${SITE.nomeCompleto}, ${SITE.especialidadeCurta}`}
                   onError={() => setImgError(true)}
-                  className="relative z-10 object-cover"
+                  className="relative z-10 object-cover w-full"
                   style={{
-                    width: '100%',
                     maxWidth: '380px',
-                    height: '480px',
+                    aspectRatio: '3 / 4',
                     borderRadius: '16px 4px 16px 4px',
                   }}
                 />
               ) : (
                 <div
-                  className="relative z-10 flex items-center justify-center"
+                  className="relative z-10 flex items-center justify-center w-full"
                   style={{
-                    width: '380px',
-                    maxWidth: '100%',
-                    height: '480px',
+                    maxWidth: '380px',
+                    aspectRatio: '3 / 4',
                     borderRadius: '16px 4px 16px 4px',
                     background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)`,
                     border: `1px solid color-mix(in srgb, var(--color-secondary) 20%, transparent)`,

@@ -165,26 +165,27 @@ export default function About() {
           </div>
 
           {/* Photo — mobile: second */}
-          <div className="flex justify-center md:justify-start order-2 md:order-1 md:self-stretch">
+          <div className="flex justify-center md:justify-start order-2 md:order-1">
             <FadeIn delay={0.1}>
-              <div className="relative w-full h-full" style={{ minHeight: '480px' }}>
+              <div className="relative">
                 {!imgError ? (
                   <img
                     src={SITE.fotoAbout}
                     alt={SITE.nomeCurto}
                     onError={() => setImgError(true)}
-                    className="object-cover object-top w-full h-full"
+                    className="object-cover object-top w-full"
                     style={{
+                      maxWidth: '380px',
+                      aspectRatio: '3 / 4',
                       borderRadius: '16px 4px 16px 4px',
                     }}
                   />
                 ) : (
                   <div
-                    className="flex items-center justify-center"
+                    className="flex items-center justify-center w-full"
                     style={{
-                      width: '100%',
-                      height: '100%',
-                      minHeight: '480px',
+                      maxWidth: '380px',
+                      aspectRatio: '3 / 4',
                       borderRadius: '16px 4px 16px 4px',
                       background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)`,
                       border: `1px solid color-mix(in srgb, var(--color-secondary) 20%, transparent)`,
@@ -216,7 +217,7 @@ export default function About() {
                 )}
                 {/* Decorative line */}
                 <div
-                  className="absolute -left-4 top-8 bottom-8"
+                  className="absolute -left-4 top-8 bottom-8 hidden md:block"
                   style={{
                     width: '2px',
                     backgroundColor: 'var(--color-secondary)',
