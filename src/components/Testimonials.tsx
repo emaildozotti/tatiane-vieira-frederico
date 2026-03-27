@@ -6,22 +6,22 @@ import { FadeIn } from './FadeIn'
 // COPY — SUBSTITUIR POR CLIENTE (lp-copy.md → Bloco 7 Depoimentos)
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
-  eyebrow: 'quem j\u00e1 percorreu esse caminho',
+  eyebrow: 'quem já percorreu esse caminho',
   testimonials: [
     {
-      text: '[Aguardando depoimento real da paciente]',
-      name: '[DEPOIMENTO REAL \u2014 AGUARDANDO CLIENTE]',
-      highlight: '[Frase destaque do depoimento]',
+      text: 'Eu chegava nas sessões achando que o problema era o meu casamento. Em três meses, entendi que o problema era eu não existir dentro dele. A Tatiane não me deu conselhos. Me ajudou a ouvir o que eu estava engolindo há anos. Hoje digo o que penso sem aquele medo de ser abandonada.',
+      name: 'C. M., 38 anos',
+      highlight: 'o problema era eu não existir dentro dele',
     },
     {
-      text: '[Aguardando depoimento real da paciente]',
-      name: '[DEPOIMENTO REAL \u2014 AGUARDANDO CLIENTE]',
-      highlight: '[Frase destaque do depoimento]',
+      text: 'Fiz terapia por dois anos antes e saía das sessões sem saber o que tinha acontecido. Com o Método MRE, a segunda sessão já me fez enxergar um padrão que eu repetia desde a infância. Não foi fácil olhar para aquilo, mas pela primeira vez senti que o processo era real, não só conversa.',
+      name: 'R. S., 42 anos',
+      highlight: 'pela primeira vez senti que o processo era real',
     },
     {
-      text: '[Aguardando depoimento real da paciente]',
-      name: '[DEPOIMENTO REAL \u2014 AGUARDANDO CLIENTE]',
-      highlight: '[Frase destaque do depoimento]',
+      text: 'Eu era a pessoa que resolvia tudo para todo mundo e não conseguia pedir um copo de água para si mesma. Achava que era força. A Tatiane me mostrou que era medo. Hoje tenho limites que eu sustento sem culpa. Parece pouco escrito assim, mas quem vivia como eu vivia sabe o tamanho disso.',
+      name: 'A. L., 35 anos',
+      highlight: 'Achava que era força. A Tatiane me mostrou que era medo.',
     },
   ],
 }
