@@ -165,8 +165,8 @@ export default function About() {
           </div>
 
           {/* Photo — mobile: second */}
-          <div className="flex justify-center md:justify-start order-2 md:order-1">
-            <FadeIn delay={0.1}>
+          <div className="order-2 md:order-1">
+            <FadeIn delay={0.1} className="w-full">
               <div className="relative w-full md:w-auto">
                 {!imgError ? (
                   <img
