@@ -191,7 +191,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.6, delay: 0.2, ease }}
-            className="flex justify-center md:justify-end"
+            className="flex justify-center md:justify-end px-4 md:px-0"
           >
             <div className="relative">
               {/* Decorative frame */}
