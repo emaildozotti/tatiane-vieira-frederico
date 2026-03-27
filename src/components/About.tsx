@@ -167,24 +167,22 @@ export default function About() {
           {/* Photo — mobile: second */}
           <div className="flex justify-center md:justify-start order-2 md:order-1">
             <FadeIn delay={0.1}>
-              <div className="relative">
+              <div className="relative w-full md:w-auto">
                 {!imgError ? (
                   <img
                     src={SITE.fotoAbout}
                     alt={SITE.nomeCurto}
                     onError={() => setImgError(true)}
-                    className="object-cover object-top w-full"
+                    className="object-cover object-top w-full md:w-[380px]"
                     style={{
-                      maxWidth: '380px',
                       aspectRatio: '3 / 4',
                       borderRadius: '16px 4px 16px 4px',
                     }}
                   />
                 ) : (
                   <div
-                    className="flex items-center justify-center w-full"
+                    className="flex items-center justify-center w-full md:w-[380px]"
                     style={{
-                      maxWidth: '380px',
                       aspectRatio: '3 / 4',
                       borderRadius: '16px 4px 16px 4px',
                       background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)`,

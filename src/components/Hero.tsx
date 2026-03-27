@@ -193,7 +193,7 @@ export default function Hero() {
             transition={{ duration: 1.6, delay: 0.2, ease }}
             className="flex justify-center md:justify-end px-4 md:px-0"
           >
-            <div className="relative">
+            <div className="relative w-full md:w-auto">
               {/* Decorative frame */}
               <div
                 className="absolute -inset-3 opacity-20"
@@ -208,18 +208,16 @@ export default function Hero() {
                   src={SITE.fotoHero}
                   alt={`${SITE.nomeCompleto}, ${SITE.especialidadeCurta}`}
                   onError={() => setImgError(true)}
-                  className="relative z-10 object-cover w-full"
+                  className="relative z-10 object-cover w-full md:w-[380px]"
                   style={{
-                    maxWidth: '380px',
                     aspectRatio: '3 / 4',
                     borderRadius: '16px 4px 16px 4px',
                   }}
                 />
               ) : (
                 <div
-                  className="relative z-10 flex items-center justify-center w-full"
+                  className="relative z-10 flex items-center justify-center w-full md:w-[380px]"
                   style={{
-                    maxWidth: '380px',
                     aspectRatio: '3 / 4',
                     borderRadius: '16px 4px 16px 4px',
                     background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)`,
