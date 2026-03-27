@@ -7,6 +7,8 @@ import { FadeIn } from './FadeIn'
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
   eyebrow: 'quem já percorreu esse caminho',
+  heading: 'O processo funciona.',
+  headingEm: 'Quem viveu sabe.',
   testimonials: [
     {
       text: 'Eu chegava nas sessões achando que o problema era o meu casamento. Em três meses, entendi que o problema era eu não existir dentro dele. A Tatiane não me deu conselhos. Me ajudou a ouvir o que eu estava engolindo há anos. Hoje digo o que penso sem aquele medo de ser abandonada.',
@@ -65,6 +67,21 @@ export default function Testimonials() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
+          <h2
+            className="text-3xl md:text-4xl mb-12 md:mb-16"
+            style={{
+              fontFamily: 'var(--font-display)',
+              color: 'var(--color-text-main)',
+              fontWeight: 400,
+              lineHeight: 1.2,
+            }}
+          >
+            {COPY.heading}{' '}
+            <em style={{ color: 'var(--color-secondary)' }}>{COPY.headingEm}</em>
+          </h2>
+        </FadeIn>
+
+        <FadeIn delay={0.15}>
           <div className="relative min-h-[320px] md:min-h-[260px]">
             {/* Giant quote mark */}
             <div
