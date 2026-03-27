@@ -35,7 +35,7 @@ export default function Testimonials() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % COPY.testimonials.length)
-    }, 6000)
+    }, 15000)
     return () => clearInterval(timer)
   }, [])
 
